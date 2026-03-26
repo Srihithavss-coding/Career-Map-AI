@@ -22,7 +22,7 @@ The core intelligence relies on a multi-layered **TCREF (Task, Context, Role, En
     * *Example:* Identifying "Physics + Space History" as a trajectory for **Archeoastronomy** or **Planetary Data Science**.
 
 ### 2. Full-Stack AI Integration
-* **Engine:** `Gemini-2.0-Flash` via Google GenAI SDK.
+* **Engine:** `Gemini-2.5-Flash` via Google GenAI SDK.
 * **State Management:** Utilized `streamlit.session_state` to maintain a persistent **Conversation Buffer**, allowing the model to cross-reference early educational inputs during the final synthesis phase.
 * **Resiliency Layer:** Developed a custom `safe_generate` wrapper with **Exponential Backoff** to mitigate `429 RESOURCE_EXHAUSTED` errors. This ensures system availability during high-traffic API bursts.
 
